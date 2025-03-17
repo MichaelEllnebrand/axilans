@@ -38,8 +38,6 @@ function _draw()
     draw_year()
     draw_boxes()
     draw_starfield()
-    -- print("...", 3,3,2)
-    -- print("...", 2,2,7)
     text_outline("all your base are belong to us",4,4,7,5)
 end
 

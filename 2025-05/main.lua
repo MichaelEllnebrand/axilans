@@ -7,7 +7,7 @@ function _init()
     recording_start_frame = 1
     recording_end_frame = 360
 
-    init_starfield()
+    init_starfield(200, 2)
     init_bars()
 end
 

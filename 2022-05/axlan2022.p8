@@ -6,9 +6,11 @@ __lua__
 
 #include main.lua
 
+#include ..\common\starfield_sideways.lua
+#include ..\common\text.lua
+
 #include boxes.lua
 #include logo.lua
-#include starfield.lua
 
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
