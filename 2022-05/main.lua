@@ -2,7 +2,7 @@ function _init()
     frame = 0
     recording = false
     recording_start_frame = 1
-    recording_end_frame = 150
+    recording_end_frame = 300
 
     init_boxes()
     init_starfield()
