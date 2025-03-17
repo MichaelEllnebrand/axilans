@@ -1,3 +1,7 @@
+function text_center(_t)
+    return (128 - #_t * 4) / 2
+end
+
 function text_outline(_t,_x,_y,...)
     local args={...}
     if (args[1]==nil) then _ct=7 else _ct=args[1] end
