@@ -4,6 +4,10 @@ Pico-8 code to create animated gifs for axiLANs
 
 ## Gallery
 
+### axiLANs 2024-11-08 ... 2024-11-10
+
+![axiLANs](images/axiLANs%202024-11.gif)
+
 ### axiLANs 2023-10-20 ... 2023-10-22
 
 ![axiLANs](images/axiLANs%202023-10.gif)
