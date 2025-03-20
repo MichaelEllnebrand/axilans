@@ -6,8 +6,9 @@ __lua__
 
 #include main.lua
 
+#include ..\common\starfield_forward.lua
+
 #include logo.lua
-#include starfield.lua
 #include text.lua
 
 __gfx__

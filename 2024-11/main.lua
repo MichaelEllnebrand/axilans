@@ -7,7 +7,7 @@ function _init()
     background_color=0
 
     init_infinity()
-    init_starfield()
+    init_starfield(1000,{1,1,1,1,1,5,5,5,6,7})
     reset_particles()
 end
 

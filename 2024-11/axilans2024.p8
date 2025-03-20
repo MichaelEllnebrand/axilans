@@ -6,11 +6,12 @@ __lua__
 
 #include main.lua
 
+
+#include ..\common\starfield_forward.lua
 #include ..\common\text.lua
 
 #include infinity.lua
 #include particles.lua
-#include starfield.lua
 
 __gfx__
 00000000500000505677776557650000056665000556555005675675567777650000000056666550055655500000000000000000000000000000000000000000

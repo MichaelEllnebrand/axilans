@@ -7,7 +7,7 @@ function _init()
     recording_start_frame = 1
     recording_end_frame = 300
 
-    init_starfield()
+    init_starfield(1000,{1,2,3,4,5,6,7,8},1)
     init_tunnel()
 end
 
