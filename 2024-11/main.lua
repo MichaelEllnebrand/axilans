@@ -7,7 +7,7 @@ function _init()
     background_color=0
 
     init_infinity()
-    init_starfield(1000,{1,1,1,1,1,5,5,5,6,7})
+    init_starfield(1000, {1,1,1,1,1,5,5,5,6,7})
     reset_particles()
 end
 
@@ -25,14 +25,14 @@ function _update60()
 end
 
 function _draw()
-    -- background_color = (((frame-recording_start_frame)/60))%10
+    -- background_color = (((frame-recording_start_frame)/60)) % 10
     cls(background_color)
 
     draw_starfield()
     draw_infinity()
     draw_particles()
 
-    spr(64,0,50,16,2)
+    spr(64, 0, 50, 16, 2)
     text="2024-11-08    2024-11-10"
-    text_box(text,14,68,12,1)
+    text_box(text, 14, 68, 12, 1)
 end

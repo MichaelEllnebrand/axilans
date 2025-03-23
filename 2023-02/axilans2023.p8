@@ -5,6 +5,9 @@ __lua__
 -- 2023-02-17 ... 2023-02-19
 
 #include main.lua
+
+#include ..\common\text.lua
+
 #include plasma.lua
 
 

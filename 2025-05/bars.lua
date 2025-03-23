@@ -18,7 +18,7 @@ end
 
 function draw_bars()
     for bar in all(bars) do
-        _dy=60+(sin((frame-bar.offset)/180)*58)
-        sspr(0,bar.col,1,8,0,_dy,128,8)
+        _dy = 60 + (sin((frame - bar.offset) / 180) * 58)
+        sspr(0, bar.col, 1, 8, 0, _dy, 128, 8)
     end
 end

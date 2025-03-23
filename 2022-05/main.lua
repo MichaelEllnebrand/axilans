@@ -7,9 +7,9 @@ function _init()
     init_boxes()
     init_starfield()
 
-    pal(3,129,1)
-    bg_col=0
-    box_col=3
+    pal(3, 129, 1)
+    bg_col = 0
+    box_col = 3
 
     reset()
 end
@@ -20,8 +20,8 @@ function _update60()
         if (frame == recording_end_frame) extcmd('video')
     end
 
-    time+=1
-    if (time>150) then
+    time += 1
+    if (time > 150) then
         reset()
     end
 
@@ -38,22 +38,22 @@ function _draw()
     draw_year()
     draw_boxes()
     draw_starfield()
-    text_outline("all your base are belong to us",4,4,7,5)
+    text_outline("all your base are belong to us", 4, 4, 7, 5)
 end
 
 function reset()
-    time=0
+    time = 0
 
-    col=bg_col
-    bg_col=box_col
-    box_col=col
+    col = bg_col
+    bg_col = box_col
+    box_col = col
 
-    logowiggle=10
-    logox=5
-    logoy=15
-    dy=1
+    logowiggle = 10
+    logox = 5
+    logoy = 15
+    dy = 1
 
-    yeary=flr(rnd(20)+70)
+    yeary = flr(rnd(20) + 70)
 
     reset_boxes()
 end

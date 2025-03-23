@@ -4,7 +4,7 @@ function _init()
     recording_start_frame = 1
     recording_end_frame = 540
 
-    init_starfield(100,{1,1,1,1,1,5,5,5,5,6},1)
+    init_starfield(100, {1,1,1,1,1,5,5,5,5,6}, 1)
     init_text()
     init_logo()
 end
