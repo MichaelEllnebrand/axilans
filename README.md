@@ -4,6 +4,10 @@ Code to create animated gifs for axiLANs using [Pico-8](https://www.lexaloffle.c
 
 ## Gallery
 
+### axiLANs 2026-03-13 ... 2026-03-15
+
+![axiLANs](images/axiLANs%202026-03.gif)
+
 ### axiLANs 2025-10-03 ... 2025-10-06
 
 ![axiLANs](images/axiLANs%202025-10.gif)
