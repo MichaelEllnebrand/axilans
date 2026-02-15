@@ -8,7 +8,7 @@ function init_matrix()
     }
 
     for i = 0, 16*21 do
-        matrix.color[i] = 0 --rnd(16)
+        matrix.color[i] = rnd(30)
     end
     for i = 0, 30 do update_matrix() end
 end
@@ -23,7 +23,7 @@ function update_matrix()
         for i = 0, 15 do
             c = matrix.color[i]
             c = c - 1
-            if c < 0 then c = rnd(20)+10 end
+            if c < 0 then c = 30 end -- rnd(20)+10 end
             matrix.color[i] = c
         end
         -- Update the text representation of the matrix
@@ -31,7 +31,7 @@ function update_matrix()
             t = ""
             for x = 0, 15 do
                 c = matrix.color[(y*16) + x]
-                if c > 8 then
+                if c > 7 then
                     t = t .. "  "
                 else
                     t = t .. "\f" .. chr(c+103) .. chr(rnd(49)+204)
