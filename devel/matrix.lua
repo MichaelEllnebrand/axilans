@@ -8,7 +8,8 @@ function init_matrix()
     }
 
     for i = 0, 16*21 do
-        matrix.color[i] = rnd(30)
+        -- matrix.color[i] = rnd(24)
+        matrix.color[i] = (sin(cos(i/16))+sin(i/8)+cos(i/10))*12 + 12
     end
     for i = 0, 30 do update_matrix() end
 end
@@ -23,7 +24,7 @@ function update_matrix()
         for i = 0, 15 do
             c = matrix.color[i]
             c = c - 1
-            if c < 0 then c = 30 end -- rnd(20)+10 end
+            if c < 0 then c = 24 end -- rnd(20)+10 end
             matrix.color[i] = c
         end
         -- Update the text representation of the matrix
