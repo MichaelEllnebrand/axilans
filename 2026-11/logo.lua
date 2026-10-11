@@ -8,5 +8,5 @@ function draw_logo()
     x = text_center(text)
     y = 75
     -- text_outline(text, x, y, 6, 2)
-    text_shadow(text, x, y, 6, 2)
+    text_shadow(text, x, y, 6, 1)
 end

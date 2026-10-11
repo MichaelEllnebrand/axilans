@@ -3,7 +3,7 @@ function _init()
     cls(0)
 
     frame = 0
-    recording = false
+    recording = true
     recording_start_frame = 1
     recording_end_frame = 301
 
