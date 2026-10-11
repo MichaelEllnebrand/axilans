@@ -2,15 +2,42 @@ function init_starfield(...)
     local args = {...}
     if (args[1] == nil) then _num_stars = 100 else _num_stars = args[1] end
     if (args[2] == nil) then _color = 5 else _color = args[2] end
+    if (args[3] == nil) then _starfield_direction = "left" else _starfield_direction = args[3] end
     stars = {}
     for i = 1, _num_stars do
-        s={
-            x = rnd(128),
-            y = rnd(128),
-            dx = rnd(2) + 1,
-            dy = rnd(0.4) - 0.2,
-            c=flr(rnd(2)) + _color
-        }
+        if (_starfield_direction == "left") then
+            s={
+                x = rnd(128),
+                y = rnd(128),
+                dx = rnd(2) + 1,
+                dy = rnd(0.4) - 0.2,
+                c=flr(rnd(2)) + _color
+            }
+        elseif (_starfield_direction == "right") then
+            s={
+                x = rnd(128),
+                y = rnd(128),
+                dx = -(rnd(2) + 1),
+                dy = rnd(0.4) - 0.2,
+                c=flr(rnd(2)) + _color
+            }
+        elseif (_starfield_direction == "up") then
+            s={
+                x = rnd(128),
+                y = rnd(128),
+                dx = rnd(0.4) - 0.2,
+                dy = rnd(2) + 1,
+                c=flr(rnd(2)) + _color
+            }
+        elseif (_starfield_direction == "down") then
+            s={
+                x = rnd(128),
+                y = rnd(128),
+                dx = rnd(0.4) - 0.2,
+                dy = -(rnd(2) + 1),
+                c=flr(rnd(2)) + _color
+            }
+        end
         add(stars, s)
     end
 end
@@ -22,6 +49,15 @@ function update_starfield()
         if (s.x < 0) then
             s.x = 128
             s.y = rnd(128)
+        elseif (s.x > 128) then
+            s.x = 0
+            s.y = rnd(128)
+        elseif (s.y < 0) then
+            s.y = 128
+            s.x = rnd(128)
+        elseif (s.y > 128) then
+            s.y = 0
+            s.x = rnd(128)
         end
     end
 end
