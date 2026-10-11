@@ -7,7 +7,7 @@ function _init()
     recording_start_frame = 1
     recording_end_frame = 301
 
-    init_starfield(100, 2)
+    init_starfield(100, 2, "down")
     init_matrix()
 end
 
